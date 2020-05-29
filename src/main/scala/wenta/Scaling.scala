@@ -7,7 +7,7 @@ object Scaling {
    *
    * @param ts        original series to change
    * @param seriesMin minimal value in result series, lay on minimum of `ts`, default 0
-   * @param seriesMax minimal value in result series, lay on minimum of `ts`, default 1
+   * @param seriesMax max value in result series, lay on maximum of `ts`, default 1
    * @return scaled series
    */
   def minMaxScaler(ts: TimeSeries[Double], seriesMin: Double = 0, seriesMax: Double = 1): TimeSeries[Double] = {
